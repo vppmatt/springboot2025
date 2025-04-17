@@ -15,7 +15,7 @@ public class EmployeeRowMapper implements RowMapper<Employee> {
                 rs.getLong("id"),
                 rs.getString("firstname"),
                 rs.getString("lastname"),
-                rs.getDate("date_joined").toLocalDate(),
+                rs.getDate("dateJoined").toLocalDate(),
                 Department.valueOf( rs.getString("department")),
                 rs.getInt("costCenter"));
     }

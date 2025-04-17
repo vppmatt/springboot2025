@@ -9,13 +9,13 @@ import javax.sql.DataSource;
 @Configuration
 public class JdbcConfig {
 
-    @Bean
-    public DataSource getDataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-//        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-//        dataSource.setUrl("jdbc:mysql://svr01.local:3306/expenses_management");
-//        dataSource.setUsername("root");
-//        dataSource.setUsername("password");
-        return dataSource;
-    }
+//    @Bean
+//    public DataSource getDataSource() {
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName(env.getProperty("db.driver"));
+//        dataSource.setUrl(env.getProperty("db.url"));
+//        dataSource.setUsername(env.getProperty("db.username"));
+//        dataSource.setPassword(env.getProperty("db.password"));
+//        return dataSource;
+//    }
 }
