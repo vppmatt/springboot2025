@@ -42,4 +42,8 @@ public class EmployeeService {
         }
         return null;
     }
+
+    public Employee getEmployee(Integer employeeId) {
+        return employees.get(employeeId -1);
+    }
 }
